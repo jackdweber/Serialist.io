@@ -1,0 +1,28 @@
+{
+  "name": "serialist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "firebase": "^4.1.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "youtube-api-search": "0.0.5",
+    "youtube-search": "^1.0.10"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
