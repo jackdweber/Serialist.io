@@ -115,8 +115,8 @@ class Trending extends Component{
     render(){
         return(
             <div className='container'>
-                <h1 className='my-3'>Trending</h1>
-                <div className='col-sm-8'>
+                <h1 className=''>Trending</h1>
+                <div className='col-sm-12'>
                     {this.renderPlaylists()}
                 </div>
             </div>

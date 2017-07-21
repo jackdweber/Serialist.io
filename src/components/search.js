@@ -106,13 +106,6 @@ class Search extends Component{
                                         this.setState({playlistName: e.target.value})
 
                                 }}/>
-                                <select value={this.state.playlistGenre} onChange={(e) => this.setState({playlistGenre: e.target.value})}>
-                                    <option value="Random">Random</option>
-                                    <option value="Rap">Rap</option>
-                                    <option value="Country">Country</option>
-                                    <option value="Rock">Rock</option>
-                                    <option value="EDM">EDM</option>
-                                </select>
                                 <button type='submit' className='btn btn-primary ml-1' onClick={(e) => {
                                     
                                         e.preventDefault()
@@ -120,6 +113,13 @@ class Search extends Component{
 
                                     }}>Submit</button>
                             </form>
+                            <select value={this.state.playlistGenre} onChange={(e) => this.setState({playlistGenre: e.target.value})}>
+                                    <option value="Random">Random</option>
+                                    <option value="Rap">Rap</option>
+                                    <option value="Country">Country</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value="EDM">EDM</option>
+                            </select>
                         </div>
                     </div>
                 </div>

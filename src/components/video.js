@@ -2,7 +2,7 @@ import React from 'react';
 
 //The component for showing a video.
 
-const Video = ({video, isPlaylistItem, addToQueue, deleteFromQueue, isPublic}) => {
+const Video = ({video, isPlaylistItem, addToQueue, deleteFromQueue, isPublic, playSpecific, index}) => {
     return(
         <div className="card my-3">
             
@@ -17,7 +17,11 @@ const Video = ({video, isPlaylistItem, addToQueue, deleteFromQueue, isPublic}) =
 
             <div className='card-block text-center'>
 
-                <a href={'https://www.youtube.com/watch?v=' + video.id.videoId} target="_blank" className='card-link'>Watch</a>
+                    {!isPublic && <a href={'https://www.youtube.com/watch?v=' + video.id.videoId} target="_blank" className='card-link'>Watch</a>}
+                    {isPublic && <a href='' className='card-link' onClick={(e) => {
+                            e.preventDefault()
+                            playSpecific(index)
+                        }}>Play</a>}
                 
                     {!isPlaylistItem && !isPublic &&
                     <a href="" className='card-link' onClick={(e) => {
